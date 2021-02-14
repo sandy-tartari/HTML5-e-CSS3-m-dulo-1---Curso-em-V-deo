@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/caticon.ico" type="image/x-icon">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="img/foto-m.png" type="image/png">
+        <img src="img/foto-g.png" alt="foto de 1000x1000 px">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <!-- <audio src="audio/Happy Mistake - RKVC.mp3" controls autoplay>Happy mistake</audio>
+     -->
+    <audio preload="auto" autoplay controls loop>
+        <source src="audio/Happy Mistake - RKVC.mp3" type="audio/mpeg">
+        <source src="audio/Happy Mistake - RKVC.ogg" type="audio/ogg">
+        <source src="audio/Happy Mistake - RKVC.kav" type="audio/kav">
+        <p>Infelizmente, seu navegador não consegue reproduzir audio, <a href="audio/Happy Mistake - RKVC.mp3">clique aqui para baixar</a></p>
+    </audio>
+</body>
+</html>
